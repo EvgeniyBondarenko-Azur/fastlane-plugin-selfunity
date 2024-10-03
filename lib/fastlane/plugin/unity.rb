@@ -1,4 +1,4 @@
-require 'fastlane/plugin/unity/version'
+require 'fastlane/plugin/unity_command/version'
 
 module Fastlane
   module Unity
