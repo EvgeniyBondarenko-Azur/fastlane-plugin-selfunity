@@ -6,7 +6,7 @@ require 'fastlane/plugin/unity_command/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-unity_command'
-  spec.version       = Fastlane::Unity::VERSION
+  spec.version       = Fastlane::Unity_Command::VERSION
   spec.author        = 'bond'
   spec.email         = 'bondarenkoweb@gmail.com'
 
