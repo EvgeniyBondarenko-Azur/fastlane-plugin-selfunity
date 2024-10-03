@@ -5,13 +5,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'fastlane/plugin/unity/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'fastlane-plugin-unity'
+  spec.name          = 'fastlane-plugin-unity_command'
   spec.version       = Fastlane::Unity::VERSION
-  spec.author        = 'safu9'
-  spec.email         = 'safu9.dev@gmail.com'
+  spec.author        = 'bond'
+  spec.email         = 'bondarenkoweb@gmail.com'
 
-  spec.summary       = 'Fastlane plugin for Unity'
-  spec.homepage      = "https://github.com/safu9/fastlane-plugin-unity"
+  spec.summary       = 'Fastlane plugin for Unity with add command'
+  spec.homepage      = "https://github.com/EvgeniyBondarenko-Azur/fastlane-plugin-unity"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
