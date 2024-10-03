@@ -1,12 +1,12 @@
 require 'fastlane/action'
-require_relative '../helper/unity_helper'
+require_relative '../helper/selfunity_helper'
 
 module Fastlane
   module Actions
     class SelfunityAction < Action
       def self.run(params)
         unity_path = params[:unity_path]
-        unity_path = Helper::UnityHelper.find_unity_path(params[:unity_version]) unless unity_path
+        unity_path = Helper::SelfunitynityHelper.find_unity_path(params[:unity_version]) unless unity_path
         unless unity_path
           UI.user_error!("Cannot find path to unity executable!")
         end
