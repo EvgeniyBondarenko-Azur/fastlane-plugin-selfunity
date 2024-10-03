@@ -2,7 +2,7 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fastlane/plugin/unity/version'
+require 'fastlane/plugin/unity_command/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'fastlane-plugin-unity_command'
