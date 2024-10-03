@@ -22,7 +22,7 @@ module Fastlane
           paths << "C:\\Program Files\\Unity\\Hub\\Editor\\#{unity_version}\\Editor\\Unity.exe" if unity_version
           paths << "C:\\Program Files\\Unity\\Editor\\Unity.exe"
         elsif OS.mac?
-          paths << "/Applications/Unity/Hub/Editor/#{unity_version}/Unity.app/Contents/MacOS/Unity" if unity_version
+          paths << "/Applications/#{unity_version}/Unity.app/Contents/MacOS/Unity" if unity_version
           paths << "/Applications/Unity/Unity.app/Contents/MacOS/Unity"
         elsif OS.linux?
           paths << "~/Unity/Hub/Editor/#{unity_version}/Editor/Unity" if unity_version
