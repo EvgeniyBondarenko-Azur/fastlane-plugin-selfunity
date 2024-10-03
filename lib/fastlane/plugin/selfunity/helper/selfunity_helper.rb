@@ -5,7 +5,7 @@ module Fastlane
   UI = FastlaneCore::UI unless Fastlane.const_defined?("UI")
 
   module Helper
-    class UnityHelper
+    class SelfunityHelper
       # class methods that you define here become available in your action
       # as `Helper::UnityHelper.your_method`
       #

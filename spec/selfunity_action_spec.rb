@@ -1,4 +1,4 @@
-describe Fastlane::Actions::UnityAction do
+describe Fastlane::Actions::SelfunityAction do
   describe '#run' do
     it 'exec a command' do
       expect(FastlaneCore::CommandExecutor).to receive(:execute).with(
@@ -7,11 +7,11 @@ describe Fastlane::Actions::UnityAction do
         print_command: true
       )
 
-      Fastlane::Actions::UnityAction.run({ unity_path: '/path/to/unity' })
+      Fastlane::Actions::SelfunityAction.run({ unity_path: '/path/to/unity' })
     end
 
     it 'exec a command without unity_path' do
-      allow(Fastlane::Helper::UnityHelper).to receive(:find_unity_path).and_return("/path/to/found/unity")
+      allow(Fastlane::Helper::SelfunityHelper).to receive(:find_unity_path).and_return("/path/to/found/unity")
 
       expect(FastlaneCore::CommandExecutor).to receive(:execute).with(
         command: "\"/path/to/found/unity\" -logfile",
@@ -19,7 +19,7 @@ describe Fastlane::Actions::UnityAction do
         print_command: true
       )
 
-      Fastlane::Actions::UnityAction.run({})
+      Fastlane::Actions::SelfunityAction.run({})
     end
   end
 end

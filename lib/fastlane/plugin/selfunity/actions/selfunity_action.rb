@@ -3,7 +3,7 @@ require_relative '../helper/unity_helper'
 
 module Fastlane
   module Actions
-    class UnityAction < Action
+    class SelfunityAction < Action
       def self.run(params)
         unity_path = params[:unity_path]
         unity_path = Helper::UnityHelper.find_unity_path(params[:unity_version]) unless unity_path
