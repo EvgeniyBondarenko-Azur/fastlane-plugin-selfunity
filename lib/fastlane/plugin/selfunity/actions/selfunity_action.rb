@@ -94,7 +94,7 @@ module Fastlane
 
           FastlaneCore::ConfigItem.new(key: :logfile,
                                        env_name: "FL_UNITY_LOGFILE",
-                                       description: "Logfile Editorlog",
+                                       description: "Logfile Editor.log",
                                        default_value: '-',
                                        is_string: true),
 
