@@ -27,7 +27,7 @@ module Fastlane
         cmd << " -cacheServerEnableDownload #{params[:cache_server_enable_download]}" unless params[:cache_server_enable_download].nil?
         cmd << " -cacheServerEnableUpload #{params[:cache_server_enable_upload]}" unless params[:cache_server_enable_upload].nil?
 
-        cmd << " -logfile #{params[:logfile]}" if params[:logfile]"
+        cmd << " -logfile #{params[:logfile]}" if params[:logfile]
         cmd << " #{params[:extra_args]}" if params[:extra_args]
 
         FastlaneCore::CommandExecutor.execute(
