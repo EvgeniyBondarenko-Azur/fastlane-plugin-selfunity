@@ -6,7 +6,7 @@ module Fastlane
     class SelfunityAction < Action
       def self.run(params)
         unity_path = params[:unity_path]
-        unity_path = Helper::SelfunitynityHelper.find_unity_path(params[:unity_version]) unless unity_path
+        unity_path = Helper::SelfunityHelper.find_unity_path(params[:unity_version]) unless unity_path
         unless unity_path
           UI.user_error!("Cannot find path to unity executable!")
         end
