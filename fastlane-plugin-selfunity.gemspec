@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = 'bondarenkoweb@gmail.com'
 
   spec.summary       = 'Fastlane plugin for Unity with add command'
-  spec.homepage      = "https://github.com/EvgeniyBondarenko-Azur/fastlane-plugin-unity"
+  spec.homepage      = "https://github.com/EvgeniyBondarenko-Azur/fastlane-plugin-selfunity"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
